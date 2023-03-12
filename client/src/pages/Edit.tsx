@@ -18,20 +18,20 @@ const Edit = () => {
 
   return (
     <div>
-    <div className='px-[3%] '>
-        <div className='flex justify-between items-center my-[2%]'>
-            <div className='flex justify-between w-[50%]'>
-                <div className='w-[50%]'>
-                    <label>Seller State</label>
-                    <input type="text" name="seller_state" className='rounded-lg ml-[3%]' onChange={handleChange} />
+    <div className='px-[3%] bg-[#fff] w-[80%] mx-[auto] rounded-lg py-[2%] mt-[5%]'>
+        <div className='flex flex-col lg:flex-row justify-between items-center my-[2%]'>
+            <div className='flex flex-col lg:flex-row justify-between w-[100%] lg:w-[50%]'>
+                <div className='w-[100%] lg:w-[50%]'>
+                    <label className='' >Seller State</label>
+                    <input type="text" name="seller_state" className='rounded-lg  w-[100%]' onChange={handleChange} />
                 </div>
         
-                <div className='w-[50%]'>
-                    <label>Seller City</label>
-                    <input type="text" name="seller_city" className='rounded-lg ml-[3%]' onChange={handleChange} />
+                <div className='w-[100%] lg:w-[50%] mt-[5%] lg:mt-[0%] lg:ml-[5%]'>
+                    <label className=''>Seller City</label>
+                    <input type="text" name="seller_city" className='rounded-lg  w-[100%]' onChange={handleChange} />
                 </div>
             </div>
-            <button className="bg-[#C9F7F5] text-[#1BC5BD] w-[30%] h-[4vh] rounded-lg" onClick = {handleSubmit}>
+            <button className="bg-[#C9F7F5] text-[#1BC5BD] w-[100%] lg:w-[30%] h-[4vh] rounded-lg mt-[5%] lg:mt-[0%]" onClick = {handleSubmit}>
                     Update
                 </button>
         </div>

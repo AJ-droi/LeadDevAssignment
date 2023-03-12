@@ -17,9 +17,10 @@ const Home = () => {
         LoginConfig(formData)
     }
   return (
-    <div className="bg-[#fff] w-[80%] mx-[auto] rounded-lg ">
-        <h3 className="md:text-left md:ml-[5%] md:text-lg pt-[5%] text-[#272556] font-extrabold ">
-        Sign In
+    <div className='w-[100%] flex flex-col items-center justify-center'>
+    <div className="bg-[#fff] w-[100%] md:w-[80%] mx-[auto] rounded-lg  mt-[10%]">
+        <h3 className=" md:ml-[5%] md:text-lg pt-[5%] text-[#272556] font-extrabold text-center ">
+        Sign In 
         </h3>
         <form className="flex flex-col items-center text-left  w-[100%] " onSubmit={handleSubmit}>
         <div className="w-[100%] flex flex-col items-center py-[3%]">
@@ -35,7 +36,7 @@ const Home = () => {
             name="sellerId"
             id="name"
             placeholder="henry@nigerianbar.ng"
-            className="border rounded-lg w-[80%] mt-[-5%] h-[6vh] pl-[2%] lg:mt-[0%]"
+            className="border rounded-lg w-[80%]  h-[6vh] pl-[2%] lg:mt-[0%]"
             onChange={handleChange}
     
             />
@@ -49,14 +50,14 @@ const Home = () => {
             type="number"
             name="zipCode"
             id="password"
-            className="border w-[80%] mt-[-5%] h-[6vh] rounded-lg pl-[2%] lg:mt-[0%]"
+            className="border w-[80%] h-[6vh] rounded-lg pl-[2%] lg:mt-[0%]"
             onChange={handleChange}
             />
         </div>
-        <div className="flex flex-col md:flex-row md:justify-center md:items-center md:px-[10%] md:w-[200%] ">
+        <div className="flex flex-col md:flex-row justify-center md:items-center md:px-[10%]  w-[100%]  ">
             
             <button
-            className="bg-[#272556] text-[#fff] w-[90%] h-[5vh] mx-[auto] md:mx-[0%] rounded-lg my-[5%] md:my-[3%] md:w-[50%] lg:w-[40%]"
+            className="bg-[#272556] text-[#fff] w-[90%] h-[5vh] mx-[auto] md:mx-[0%] rounded-lg my-[5%] md:my-[3%] md:w-[50%] lg:w-[20%]"
             type="submit"
             >
             {" "}
@@ -65,6 +66,7 @@ const Home = () => {
             {/* <button onClick={handleRole}>Check Role</button> */}
         </div>
         </form>
+    </div>
     </div>
 
   )

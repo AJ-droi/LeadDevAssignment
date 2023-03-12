@@ -12,7 +12,7 @@ import { ProtectRoute } from './pages/context/ProtectedRoute';
 function App() {
 
   return (
-    <div className='App '>
+    <div >
       <DataProvider>
       <ToastContainer />
         <Router>

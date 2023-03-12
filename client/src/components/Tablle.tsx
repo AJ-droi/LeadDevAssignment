@@ -41,7 +41,7 @@ export const TableBody = () => {
       {(location.pathname == `/seller/${productId}` ? singleOrder : orders).map(
         (elem: any, id: number) => (
           <Table.Row className="h-[8vh]" key={id}>
-            <Table.Cell className="text-center w-[10%]">{elem.id}</Table.Cell>
+            <Table.Cell className="text-center w-[30%] ">{elem.id}</Table.Cell>
         
             <Table.Cell className="text-center w-[20%] ">
               {elem.product_id}
@@ -55,22 +55,22 @@ export const TableBody = () => {
             <Table.Cell className="text-center w-[10%]">
               {elem.product_category}
             </Table.Cell>
-            {location.pathname == `/seller/${productId}`?<>
+            {location.pathname == `/seller/${productId}`?<div className="flex flex-col items-center mt-[7%] ">
             <Link
               to={`/edit`}
-              className="flex items-center justify-center h-[inherit]"
-            ><button className="bg-[#C9F7F5] text-[#1BC5BD] w-[100%] h-[4vh] rounded-lg">
+              className="flex items-center justify-center h-[inherit] w-[100%]"
+            ><button className="bg-[#C9F7F5] text-[#1BC5BD] w-[50%] h-[4vh] rounded-lg">
                Edit
               </button>
               </Link>
-              <button className="bg-[#C9F7F5] text-[#1BC5BD] w-[100%] h-[4vh] rounded-lg" onClick={(e) => deleteOrder(productId)} >
+              <button className="bg-[#C9F7F5] text-[#1BC5BD] w-[50%] h-[4vh] mt-[2%] rounded-lg" onClick={(e) => deleteOrder(productId)} >
                 Delete
               </button>
-            </> :<Link
+            </div> :<Link
               to={`/seller/${elem.id}`}
               className="flex items-center justify-center h-[inherit]"
             >
-              <button className="bg-[#C9F7F5] text-[#1BC5BD] w-[100%] h-[4vh] rounded-lg">
+              <button className="bg-[#C9F7F5] text-[#1BC5BD] w-[50%] h-[4vh] rounded-lg">
                 View
               </button>
             </Link>}
@@ -94,7 +94,7 @@ export const SellerTable = () => {
       {seller.map(
         (elem: any, id: number) => (
           <Table.Row className="h-[8vh]" key={id}>
-            <Table.Cell className="text-center w-[10%]">{elem._id}</Table.Cell>
+            <Table.Cell className="text-center w-[10%] mr-[5%]">{elem._id}</Table.Cell>
             <Table.Cell className="text-center w-[20%] ">
               {elem.seller_id}
             </Table.Cell>
